@@ -67,10 +67,10 @@
       VALUES  
         ( DEFAULT, 'Ana', 'Martínez', 33444555, '1166677788', NULL, '2024-06-25' );  
 
-### insertar múltiples registros
+### Insertar múltiples registros
 > En algunos casos vamos a necesitar insertar varios registros
 > no es obligatorio utilizar un **insert** por cada uno de los registros a insertar
-> podemos utilizar un único **INSERT** para varios registros
+> Podemos utilizar un único **INSERT** para varios registros
 
     INSERT INTO nombreTabla  
         ( nombreCampo, nombreCampo2, nombreCampo3, nombreCampoX )  
