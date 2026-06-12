@@ -25,3 +25,16 @@ create table productos
     foreign key (idMarca) references marcas (idMarca),
     foreign key (idCategoria) references categorias (idCategoria)
 );
+
+/*
+FOREIGN KEY (idMarca) REFERENCES marcas (idMarca)
+    ON DELETE acción
+    ON UPDATE acción
+###
+ON DELETE RESTRICT  -- no me deja eliminar una marca si tiene productos PREDETERMINADO
+ON DELETE CASCADE   -- si elimino la marca, se eliminan todos sus productos
+ON UPDATE CASCADE   -- si cambia idMarca en marcas, se actualiza en productos también
+ON DELETE SET NULL  -- si elimino la marca, idMarca queda en NULL en los productos
+ON DELETE SET DEFAULT  -- pone el DEFAULT definido en la columna
+ON DELETE NO ACTION
+*/
